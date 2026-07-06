@@ -5,8 +5,8 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x gradlew
-RUN ./gradlew build -x test
+RUN ./gradlew clean build -x test
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "build/libs/$(ls build/libs | grep -v plain | head -n 1)"]
+CMD ["sh", "-c", "java -jar build/libs/TimeClickers-0.0.1-SNAPSHOT.jar"]
