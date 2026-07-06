@@ -1,4 +1,4 @@
 package com.timeclickers.model;
 
-public class player {
+public class Player {
 }
