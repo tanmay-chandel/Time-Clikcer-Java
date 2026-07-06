@@ -9,4 +9,4 @@ RUN ./gradlew clean build -x test
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "java -jar build/libs/TimeClickers-0.0.1-SNAPSHOT.jar"]
+CMD ["sh", "-c", "java -Dserver.port=${PORT:-8080} -jar build/libs/TimeClickers-0.0.1-SNAPSHOT.jar"]
