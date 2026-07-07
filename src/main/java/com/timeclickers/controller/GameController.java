@@ -48,7 +48,7 @@ public class GameController {
 
     // Quiz reward
     @PostMapping("/reward")
-    public Player reward() {
-        return gameService.rewardPlayer();
+    public Player reward(@RequestParam int reward) {
+        return gameService.rewardPlayer(reward);
     }
 }

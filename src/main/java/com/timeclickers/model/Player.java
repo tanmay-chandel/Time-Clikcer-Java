@@ -24,12 +24,9 @@ public class Player {
     }
 
     // Quiz reward
-    public void rewardQuiz() {
-        points += quizReward;
+    public void rewardQuiz(int reward) {
+        points += reward;
         correctAnswers++;
-
-        // Reward scales upward
-        quizReward += 100;
     }
 
     // Getters

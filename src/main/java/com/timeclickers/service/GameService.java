@@ -48,8 +48,8 @@ public class GameService {
     }
 
     // Reward after correct quiz
-    public Player rewardPlayer() {
-        player.rewardQuiz();
+    public Player rewardPlayer(int reward) {
+        player.rewardQuiz(reward);
         return player;
     }
 }
